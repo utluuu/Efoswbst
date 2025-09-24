@@ -1,0 +1,133 @@
+body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: #fff0f5;
+      color: #333;
+    }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.gallery img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 0.8rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* Modal stili */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;              /* kaydırma olsun */
+  background: rgba(0,0,0,0.9);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.modal-img {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  max-width: 90vw;   /* geniş ekranı doldur */
+  max-height: 90vh;  /* yüksekliği de sığdır */
+  object-fit: contain;
+}
+
+.close {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10000;
+}
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: #fff0f5;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ff9aa2, #ffb6b9);
+      color: white;
+      text-align: center;
+      padding: 2.5rem;
+      border-radius: 0 0 2rem 2rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffe6eb;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h2 {
+      color: #ff6f91;
+    }
+
+    .heart {
+      font-size: 2rem;
+      color: #ff6f91;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: linear-gradient(135deg, #ff9aa2, #ffb6b9);
+      color: white;
+      border-radius: 2rem 2rem 0 0;
+      margin-top: 2rem;
+    }
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+} 
